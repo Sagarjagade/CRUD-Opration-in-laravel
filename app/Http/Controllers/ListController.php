@@ -10,7 +10,7 @@ class ListController extends Controller
 {
     public function index()
     {
-        // $article = DB::table('list')->orderBy('id')->get();
+        //$article = DB::table('list')->orderBy('id')->get();
 
          $article = lists::all();
         return view('list')->with(compact('article'));
